@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<img src="logo.jpg" width="150" height="150" margin-right: 20px;>
+<div style="text-align:center; margin-right: 40px;">
+<a style="padding-right: 20px;" href="index.html">Home</a>
+<a style="padding-right: 20px;" href="about.html">About</a>
+<a style="padding-right: 20px;" href="search.html">Search</a>
+</div>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Bar Example</title>
+  <style>
+    /* Basic page styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Search bar container */
+    .search-container {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 25px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 5px 10px;
+      width: 300px;
+    }
+
+    /* Search input */
+    .search-container input[type="text"] {
+      border: none;
+      outline: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 25px;
+      font-size: 16px;
+    }
+
+    /* Search button */
+    .search-container button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .search-container button:hover {
+      background-color: #45a049;
+    }
+
+    /* Optional: icon inside the button */
+    .search-container button i {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="search-container" action="/search" method="GET">
+    <input type="text" name="q" placeholder="Search...">
+    <button type="submit">
+      🔍
+    </button>
+  </form>
+
+</body>
+</html>
